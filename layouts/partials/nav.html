@@ -53,6 +53,11 @@
             <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
           </li>
       {{ end }}
+      {{ if .Site.Params.showResume }}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger resume-special" href="{{ .Site.Params.resumeUrl }}">Blog</a>
+          </li>
+      {{ end }}
     </ul>
   </div>
 </nav>
